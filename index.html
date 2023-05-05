@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Sistema de comunicación</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__header">
+            <p class="navbar__logo">logo</p>
+            <div class="navbar__icons">
+                <i class="fa-solid fa-bars" id="hamburger"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </div>
+        </div>
+        <div class="navbar__menu">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#">Inicio</a></li>
+                <li class="navbar__item"><a href="#">Preguntas frecuentes</a></li>
+                <li class="navbar__item"><a href="#">Manuales y tutoriales</a></li>
+                <li class="navbar__item"><a href="#">Noticias</a></li>
+                <li class="navbar__item"><a href="#">Calendario</a></li>
+                <li class="navbar__item"><a href="#">Administrar perfil</a></li>
+                <li class="navbar__item"><a href="#">Organigrama de la empresa</a></li>
+                <li class="navbar__item"><a href="#">Chat de vendedores</a></li>
+            </ul>
+            <div class="back"></div>
+        </div>
+    </nav>
+    <main class="main" id="ancho-contenedor-chat">
+        <section class="main-header">
+            <h2>Chat para vendedores y equipo de soporte</h2>
+        </section>
+        
+        <section class="chat" >
+            <!-- Sección donde se muestra el listado de usuarios.  -->
+            <section class="chat__users" >
+                <form class="button__search" action="">
+                    <input type="text" placeholder="Busca un chat por nombre...">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
+
+                <article class="chat__one-user" id="nombre-usuario-1">
+                    <div class="chat__one-user--left">
+                        <img class="user-image-icon" src="./assets/img/camila.jpg" alt="">
+                        <div class="chat__one-user--box">
+                            <p class="chat__one-user-name chat__one-user-name--bold" id="etiqueta-nombre-1">Camila Araneda</p>
+                            <p class="chat__one-user-text">eligendi magnam, impedit saepe libero!</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user--right">
+                        <p class="chat__one-user-time">5:48 PM</p>
+                        <p class="chat__one-user-number" id="mensajes-pendientes-usuario-1">1</p>
+                    </div>
+                </article>
+                
+                <article class="chat__one-user" id="nombre-usuario-2">
+                    <div class="chat__one-user--left">
+                        <img class="user-image-icon" src="./assets/img/juan.jpg" alt="">
+                        <div class="chat__one-user--box">
+                            <p class="chat__one-user-name chat__one-user-name--bold" id="etiqueta-nombre-2">Juan Salgado</p>
+                            <p class="chat__one-user-text">eligendi magnam, impedit saepe libero!</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user--right">
+                        <p class="chat__one-user-time">3:25 PM</p>
+                        <p class="chat__one-user-number" id="mensajes-pendientes-usuario-2">4</p>
+                    </div>
+                </article>
+
+                <article class="chat__one-user" id="nombre-usuario-3">
+                    <div class="chat__one-user--left">
+                        <img class="user-image-icon" src="./assets/img/agustina.jpg" alt="">
+                        <div class="chat__one-user--box">
+                            <p class="chat__one-user-name" id="etiqueta-nombre-3">Agustina Muñoz</p>
+                            <p class="chat__one-user-text">OK!</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user--right">
+                        <p class="chat__one-user-time">1:12 PM</p>
+                        <p class="chat__one-user-number" id="mensajes-pendientes-usuario-3"></p>
+                    </div>
+                </article>
+
+                <article class="chat__one-user" id="nombre-usuario-4">
+                    <div class="chat__one-user--left">
+                        <img class="user-image-icon" src="./assets/img/luis.jpg" alt="">
+                        <div class="chat__one-user--box">
+                            <p class="chat__one-user-name" id="etiqueta-nombre-4">Luis Sepulveda</p>
+                            <p class="chat__one-user-text">optio incidunt illum recusandae?</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user--right">
+                        <p class="chat__one-user-time">11:30 AM</p>
+                        <p class="chat__one-user-number" id="mensajes-pendientes-usuario-4"></p>
+                    </div>
+                </article>
+
+                <article class="chat__one-user" id="nombre-usuario-5">
+                    <div class="chat__one-user--left">
+                        <img class="user-image-icon" src="./assets/img/valeria.jpg" alt="">
+                        <div class="chat__one-user--box">
+                            <p class="chat__one-user-name chat__one-user-name--bold" id="etiqueta-nombre-5">Valeria Mondaca</p>
+                            <p class="chat__one-user-text">Quo ut odit omnis odio...</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user--right">
+                        <p class="chat__one-user-time">10:22 AM</p>
+                        <p class="chat__one-user-number" id="mensajes-pendientes-usuario-5">1</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sección donde se muestra el chat con un usuario. -->
+            <section  class="chat__messages">
+                <article class="chat__welcome-message">
+                    <div class="chat__welcome-message--change">
+                        <h3>Selecciona un contacto para iniciar tu conversación</h3> 
+                    </div>
+                    
+                </article>
+                <article class="chat__one-user-message ocultar-chat" id="chat-usuario-1">
+                    <div class="chat__one-user-message--top ">
+                        <div class="chat__header">
+                            <div class="chat__header--left">
+                                <i class="fa-solid fa-arrow-left" id="volver-lista-contactos-1"></i>
+                                <img class="user-image-icon" src="./assets/img/camila.jpg" alt="">
+                                <h3>Camila Araneda</h3>
+                            </div>
+                            <div class="chat__header--right">
+                                <i class="fa-solid fa-paperclip" id="btn-adjuntar-1"></i>
+                                <ul class="chat__header-dropdown" id="menu-adjuntar-1">
+                                    <li>Archivos</li>
+                                    <li>Imágenes</li>
+                                    <li>Videos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat__historial">
+                            <p class="chat__historial--left">Lorem ipsum dolor sit amet</p>
+                            <p class="chat__historial--left">consectetur adipisicing elit.</p>
+                            <p class="chat__historial--right">Eveniet illo corporis</p>
+                            <p class="chat__historial--left">voluptas excepturi velit accusantium non</p>
+                            <p class="chat__historial--right">reprehenderit repellat veritatis sit</p>
+                            <p class="chat__historial--left">eligendi magnam, impedit saepe libero!</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user-message--bottom">
+                        <form class="chat__historial-form" action="">
+                            <input type="text" placeholder="Mensaje...">
+                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                            <!-- <button type="submit"><i class="fa-regular fa-paper-plane"></i></button> -->
+                        </form>
+                    </div>
+                </article>
+
+                <article class="chat__one-user-message ocultar-chat" id="chat-usuario-2">
+                    <div class="chat__one-user-message--top">
+                        <div class="chat__header">
+                            <div class="chat__header--left">
+                                <i class="fa-solid fa-arrow-left" id="volver-lista-contactos-2"></i>
+                                <img class="user-image-icon" src="./assets/img/juan.jpg" alt="">
+                                <h3>Juan Salgado</h3>
+                            </div>
+                            <div class="chat__header--right">
+                                <i class="fa-solid fa-paperclip" id="btn-adjuntar-2"></i>
+                                <ul class="chat__header-dropdown" id="menu-adjuntar-2">
+                                    <li>Archivos</li>
+                                    <li>Imágenes</li>
+                                    <li>Videos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat__historial">
+                            <p class="chat__historial--right">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <p class="chat__historial--left">Deserunt id nostrum optio saepe eum</p>
+                            <p class="chat__historial--right">Eveniet illo corporis</p>
+                            <p class="chat__historial--left">voluptas excepturi velit accusantium non</p>
+                            <p class="chat__historial--left">eligendi magnam, impedit saepe libero!</p>
+                            <p class="chat__historial--left">praesentium amet dolorum</p>
+                            <p class="chat__historial--right">reprehenderit repellat veritatis sit</p>
+                            <p class="chat__historial--left">nisi modi aliquid, perferendis delectus</p>
+                            <p class="chat__historial--left">expedita facilis assumenda ullam?</p>
+                            <p class="chat__historial--left">Lorem ipsum dolor sit amet</p>
+                            <p class="chat__historial--left">consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user-message--bottom">
+                        <form class="chat__historial-form" action="">
+                            <input type="text" placeholder="Mensaje...">
+                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                        </form>
+                    </div>
+                </article>
+
+                <article class="chat__one-user-message ocultar-chat" id="chat-usuario-3">
+                    <div class="chat__one-user-message--top ">
+                        <div class="chat__header">
+                            <div class="chat__header--left">
+                                <i class="fa-solid fa-arrow-left" id="volver-lista-contactos-3"></i>
+                                <img class="user-image-icon" src="./assets/img/agustina.jpg" alt="">
+                                <h3>Agustina Muñoz</h3>
+                            </div>
+                            <div class="chat__header--right">
+                                <i class="fa-solid fa-paperclip" id="btn-adjuntar-3"></i>
+                                <ul class="chat__header-dropdown" id="menu-adjuntar-3">
+                                    <li>Archivos</li>
+                                    <li>Imágenes</li>
+                                    <li>Videos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat__historial">
+                            <p class="chat__historial--left">Repellat aut nobis similique hic.</p>
+                            <p class="chat__historial--right">OK!</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user-message--bottom ">
+                        <form class="chat__historial-form" action="">
+                            <input type="text" placeholder="Mensaje...">
+                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                        </form>
+                    </div>
+                </article>
+
+                <article class="chat__one-user-message ocultar-chat" id="chat-usuario-4">
+                    <div class="chat__one-user-message--top">
+                        <div class="chat__header">
+                            <div class="chat__header--left">
+                                <i class="fa-solid fa-arrow-left" id="volver-lista-contactos-4"></i>
+                                <img class="user-image-icon" src="./assets/img/luis.jpg" alt="">
+                                <h3>Luis Sepulveda</h3>
+                            </div>
+                            <div class="chat__header--right">
+                                <i class="fa-solid fa-paperclip" id="btn-adjuntar-4"></i>
+                                <ul class="chat__header-dropdown" id="menu-adjuntar-4">
+                                    <li>Archivos</li>
+                                    <li>Imágenes</li>
+                                    <li>Videos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat__historial"> 
+                            <p class="chat__historial--right">Deserunt voluptate nostrum beatae</p>
+                            <p class="chat__historial--left">Lorem ipsum dolor</p>
+                            <p class="chat__historial--right">optio incidunt illum recusandae?</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user-message--bottom">
+                        <form class="chat__historial-form" action="">
+                            <input type="text" placeholder="Mensaje...">
+                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                        </form>
+                    </div>
+                </article>
+
+                <article class="chat__one-user-message ocultar-chat" id="chat-usuario-5">
+                    <div class="chat__one-user-message--top">
+                        <div class="chat__header">
+                            <div class="chat__header--left">
+                                <i class="fa-solid fa-arrow-left" id="volver-lista-contactos-5"></i>
+                                <img class="user-image-icon" src="./assets/img/valeria.jpg" alt="">
+                                <h3>Valeria Mondaca</h3>
+                            </div>
+                            <div class="chat__header--right">
+                                <i class="fa-solid fa-paperclip" id="btn-adjuntar-5"></i>
+                                <ul class="chat__header-dropdown" id="menu-adjuntar-5">
+                                    <li>Archivos</li>
+                                    <li>Imágenes</li>
+                                    <li>Videos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat__historial">
+                            <p class="chat__historial--right">Lorem</p>
+                            <p class="chat__historial--left">Quo ut odit omnis odio aliquam similique porro, exercitationem labore rerum blanditii?</p>
+                        </div>
+                    </div>
+                    <div class="chat__one-user-message--bottom">
+                        <form class="chat__historial-form" action="">
+                            <input type="text" placeholder="Mensaje...">
+                            <span><i class="fa-regular fa-paper-plane"></i></span>
+                        </form>
+                    </div>
+                </article>
+            </section>
+
+        </section>
+        
+    </main>
+    <!-- <footer class="footer">
+        <p>Todos los derechos reservados</p>
+    </footer> -->
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

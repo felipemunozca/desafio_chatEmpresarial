@@ -1,0 +1,8 @@
+//los mixin son mini funciones que pueden recibir variables.
+//breakpoint sera mi variable, igual a como funcionan en bootstrap.
+@mixin responde-to($break-point) {
+    @media (min-width: $break-point) {
+        //content serán las reglas css que cree al momento de llamar al mixin.
+        @content;
+    }
+}
